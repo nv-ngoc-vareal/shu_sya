@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  select(name="fileName" id="fileName" class="fileName")
+    option(value="momotaro_layer_1.psd") Momotaro layer 1
+    option(value="momotaro_layer_2.psd") Momotaro layer 2
+    option(value="momotaro_layer_3.psd") Momotaro layer 3
+  button(type="button" onclick="readFilePsd()" id="buttonRead") Generate psd file
+  div.listFile#listFile
+  script
+    include ../js/script.js
